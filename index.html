@@ -1,0 +1,186 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBNI DON</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Orbitron", sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #22d3ee;
+        }
+
+        nav h1 {
+            color: #22d3ee;
+            text-shadow: 0 0 10px #22d3ee;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #22d3ee;
+            text-shadow: 0 0 8px #22d3ee;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: url("https://wallpapercave.com/wp/wp11216063.jpg") no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            text-shadow: 0 0 15px #22d3ee;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background: #22d3ee;
+            color: #000;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .hero button:hover {
+            background: #0ff;
+            transform: scale(1.05);
+        }
+
+        /* Cards Section */
+        .games {
+            padding: 80px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            background: #111;
+        }
+
+        .card {
+            width: 300px;
+            background: #1a1a1a;
+            border: 2px solid #22d3ee;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #22d3ee;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px;
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0d0d0d;
+            border-top: 2px solid #22d3ee;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>LIBNI DON</h1>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>WELLCOME TO THE LIBNIDON GAMING ZONE</h2>
+            <button onclick="scrollToGames()">Explore Games</button>
+        </div>
+    </section>
+
+    <section class="games" id="games">
+        <div class="card">
+            <img src="Free_fire.jpg">
+            <h3>FREE FIRE</h3>
+            <p>FREEFIRE TIPS AND TRICKS.</p>
+        </div>
+
+        <div class="card">
+            <img src=".jpg">
+            <h3>Night Racer</h3>
+            <p>Race through neon streets at insane speeds.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://wallpapercave.com/wp/wp9007237.jpg">
+            <h3>Galaxy War</h3>
+            <p>Fight across galaxies in this space battle adventure.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 libni don. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToGames() {
+            document.getElementById("games").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
+
